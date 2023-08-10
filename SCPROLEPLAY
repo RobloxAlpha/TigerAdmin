@@ -1,0 +1,6 @@
+while (task.wait()) do
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 35
+    if game.Players.LocalPlayer.Character.Humanoid.Health ~= 100 then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 35
+    end
+end
