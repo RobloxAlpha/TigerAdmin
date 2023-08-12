@@ -1,0 +1,244 @@
+local lplr = game.Players.LocalPlayer
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Skibi Battle Simulator", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Features",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+_G.reward = true
+function reward()
+while _G.reward == true do
+while wait() do
+local args = {
+    [1] = "Reward1"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+wait(2)
+local args = {
+    [1] = "Reward2"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+wait(2)
+local args = {
+    [1] = "Reward3"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+wait(2)
+local args = {
+    [1] = "Reward4"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+wait(2)
+local args = {
+    [1] = "Reward5"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+wait(2)
+local args = {
+    [1] = "Reward6"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+wait(2)
+local args = {
+    [1] = "Reward7"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+wait(2)
+local args = {
+    [1] = "Reward8"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+wait(2)
+local args = {
+    [1] = "Reward9"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+wait(2)
+local args = {
+    [1] = "Reward10"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+wait(2)
+local args = {
+    [1] = "Reward11"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+wait(2)
+local args = {
+    [1] = "Reward12"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("ClaimGift"):FireServer(unpack(args))
+wait(2)
+	end
+	end
+	end
+
+Tab:AddButton({
+	Name = "Farm Wins (world 1)",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "5"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WinEvent"):FireServer(unpack(args))
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Farm Wins (world 2)",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "10"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WinEvent"):FireServer(unpack(args))
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Farm Wins (world 3)",
+	Callback = function()
+      		while wait() do
+local args = {
+    [1] = "15"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WinEvent"):FireServer(unpack(args))
+end
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Farm Strength (world 1)",
+	Callback = function()
+      		--farm strength
+
+local args = {
+    [1] = game:GetService("ReplicatedStorage"):WaitForChild("Items"):WaitForChild("Pencil"):WaitForChild("1")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangeEvent"):FireServer(unpack(args))
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Farm Strength (world 2)",
+	Callback = function()
+      		local args = {
+    [1] = game:GetService("ReplicatedStorage"):WaitForChild("Items"):WaitForChild("Pencil"):WaitForChild("7")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangeEvent"):FireServer(unpack(args))
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Farm Strength (world 3)",
+	Callback = function()
+      		local args = {
+    [1] = game:GetService("ReplicatedStorage"):WaitForChild("Items"):WaitForChild("Pencil"):WaitForChild("13")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ChangeEvent"):FireServer(unpack(args))
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Auto Equip Best Pets",
+	Callback = function()
+      		--equip best
+while wait() do
+local args = {
+    [1] = "EquipBest",
+    [2] = {}
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteFunction"):WaitForChild("HandlePet"):InvokeServer(unpack(args))
+end
+  	end    
+})
+
+Tab:AddToggle({
+	Name = "Claim Rewards",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+		_G.reward = Value
+		reward()
+	end    
+})
+
+
+Tab:AddButton({
+	Name = "Teleport to World 1",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-221.042419, 9.76784134, 174.026001, 0.0784592628, -1.96399563e-09, -0.996917307, -1.48319614e-08, 1, -3.13737192e-09, 0.996917307, 1.50323949e-08, 0.0784592628)
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Teleport to World 2",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(347.022461, 9.41078377, 98.1019211, -0.867733657, 8.55667821e-08, 0.497029483, 5.7292219e-08, 1, -7.21333464e-08, -0.497029483, -3.411661e-08, -0.867733657)
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Teleport to World 3",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(897.19751, 9.410779, 101.799744, 0.892214358, -8.24986444e-08, 0.451612115, 1.07100796e-07, 1, -2.89147017e-08, -0.451612115, 7.4166131e-08, 0.892214358)
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Auto Rebirth",
+	Callback = function()
+while wait() do
+      		game:GetService("ReplicatedStorage"):WaitForChild("GameClient"):WaitForChild("Events"):WaitForChild("RemoteEvent"):WaitForChild("RebirthEvent"):FireServer()
+end
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Other",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddLabel("made by im_lku on discord. thanks for using the script.")
+
+Tab:AddButton({
+	Name = "Kill UI",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end    
+})
+
+OrionLib:Init()
+
+--don't skid :<
