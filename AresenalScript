@@ -1,0 +1,11 @@
+if game.PlaceId == 286090429 or game.PlaceId == 8412573470 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Arsenal2"))()
+elseif game.PlaceId == 8412573470 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/ArsenalQuest"))()
+elseif game.PlaceId == 301549746 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/CBRO"))()
+elseif game.PlaceId == 6172932937 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Energy%20Assault"))()
+else
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AndrewDarkyy/NOWAY/main/darkyyware.lua"))()
+end
