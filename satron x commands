@@ -1,0 +1,152 @@
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    local args = msg:split(" ")
+    local prefix = ";"
+    local plr = game.Players.LocalPlayer
+    local char = plr.Character
+    local hum = char.Humanoid
+    local rootpart = char.HumanoidRootPart
+    _G.noclipping = false
+    local InfiniteJumpEnabled = false
+
+    --commands
+
+    if game.PlaceId == 155615604 then -- prison life
+        --teleporation commands
+
+        if args[1]:lower() == prefix.."lunchroom" then
+            rootpart.CFrame = CFrame.new(879.016235, 99.9899368, 2256.60889, -0.672340989, 5.87779176e-08, -0.740241587, 2.27088037e-08, 1, 5.87779176e-08, 0.740241587, 2.27088037e-08, -0.672340989)
+        end
+
+        if args[1]:lower() == prefix.."armory" then
+            rootpart.CFrame = CFrame.new(856.659424, 99.9899826, 2273.77466, 0.564863145, -3.42232553e-08, 0.825184584, 2.07971351e-09, 1, 4.00498266e-08, -0.825184584, -2.09065245e-08, 0.564863145)
+        end
+
+        if args[1]:lower() == prefix.."tower" then
+            rootpart.CFrame = CFrame.new(822.633179, 130.039902, 2585.33008, 0.999985099, -3.55969938e-08, 0.00546450913, 3.58317074e-08, 1, -4.28543565e-08, -0.00546450913, 4.30495177e-08, 0.999985099)
+        end
+
+        if args[1]:lower() == prefix.."office" then
+            rootpart.CFrame = CFrame.new(674.041748, 99.9899826, 2322.25537, -0.527775526, -8.81689388e-08, -0.849383891, -1.90418437e-08, 1, -9.19715077e-08, 0.849383891, -3.23664793e-08, -0.527775526)
+        end
+
+        if args[1]:lower() == prefix.."gate" then
+            rootpart.CFrame = CFrame.new(499.92746, 98.039917, 2226.38867, -0.0878526941, -2.78078574e-08, -0.996133506, -3.032698e-08, 1, -2.52411461e-08, 0.996133506, 2.79922183e-08, -0.0878526941)
+        end
+
+        if args[1]:lower() == prefix.."prison" then
+            rootpart.CFrame = CFrame.new(917.688416, 99.9899826, 2451.22681, 0.999866426, 1.61406284e-08, -0.0163425412, -1.70509349e-08, 1, -5.55623458e-08, 0.0163425412, 5.58335813e-08, 0.999866426)
+        end
+
+        if args[1]:lower() == prefix.."crimbase" then
+            rootpart.CFrame = CFrame.new(-914.312927, 95.1272888, 2138.25098, 0.0735609531, 4.70592134e-08, 0.99729073, 3.85778876e-08, 1, -5.00325932e-08, -0.99729073, 4.21538147e-08, 0.0735609531)
+        end
+
+        if args[1]:lower() == prefix.."yard" then
+            rootpart.CFrame = CFrame.new(733.374817, 97.9999237, 2427.91895, -0.649577498, 2.25445689e-08, -0.760295391, 8.32160474e-09, 1, 2.25426096e-08, 0.760295391, 8.31629432e-09, -0.649577498)
+        end
+
+        if args[1]:lower() == prefix.."sewers" then
+            rootpart.CFrame = CFrame.new(916, 78.7017899, 2311, 0.991875947, -2.7462379e-08, 0.127208963, 3.54882594e-08, 1, -6.08256769e-08, -0.127208963, 6.48459491e-08, 0.991875947)
+        end
+
+        if args[1]:lower() == prefix.."gas" then
+            rootpart.CFrame = CFrame.new(-509.532318, 54.3937759, 1639.16028, -0.74570781, -1.6561474e-08, -0.666273117, 3.55718299e-09, 1, -2.88381621e-08, 0.666273117, -2.38748985e-08, -0.74570781)
+        end
+
+        if args[1]:lower() == prefix.."gatetower" then
+            rootpart.CFrame = CFrame.new(505.513794, 125.039917, 2311.88354, 0.999544144, 2.1744575e-09, 0.0301920474, -2.19006102e-09, 1, 4.83741935e-10, -0.0301920474, -5.4964383e-10, 0.999544144)
+        end
+
+        if args[1]:lower() == prefix.."gatetower2" then
+            rootpart.CFrame = CFrame.new(505.614166, 125.039917, 2154.56982, -0.987277091, 4.32150715e-09, 0.159009278, 6.27969943e-09, 1, 1.18124959e-08, -0.159009278, 1.26607365e-08, -0.987277091)
+        end
+
+        if args[1]:lower() == prefix.."nexus" then
+            rootpart.CFrame = CFrame.new(918.77002, 99.9899826, 2379.07007, 1, 2.72064664e-08, -4.14031229e-14, -2.72064664e-08, 1, -7.97052166e-08, 3.92346271e-14, 7.97052166e-08, 1)
+        end
+
+        if args[1]:lower() == prefix.."bridge" then
+            rootpart.CFrame = CFrame.new(56.5073204, 28.6753273, 1304.24133, 0.401933789, 3.0313192e-09, -0.915668726, 8.4341238e-08, 1, 4.03321749e-08, 0.915668726, -9.34394961e-08, 0.401933789)
+        end
+
+        if args[1]:lower() == prefix.."crimarmor" then
+            rootpart.CFrame = CFrame.new(-928.245667, 94.1287613, 2060.37988, 0.0294147879, 1.29293012e-08, 0.99956727, 2.93821878e-09, 1, -1.30213627e-08, -0.99956727, 3.31996808e-09, 0.0294147879)
+        end
+
+        --other commands
+
+        if args[1]:lower() == prefix.."cmds" then
+            loadstring(game:HttpGet(("https://raw.githubusercontent.com/RobloxAlpha/TigerAdmin/a1a30ac4c13b12ff19b360a62c8c29511edd2606/satron%20command%20v1"), true))()
+        end
+
+    end
+
+    if args[1]:lower() == prefix.."ws" then
+        local speed = args[2]
+        if args[2] then
+            hum.WalkSpeed = speed
+        end
+    end
+
+    if args[1]:lower() == prefix.."jp" then
+        local jump = args[2]
+        if args[2] then
+            hum.JumpPower = jump
+        end
+    end
+
+    if args[1]:lower() == prefix.."noclip" then
+        if _G.noclipping == false then
+            _G.noclipping = true
+        end
+    else
+        if args[1]:lower() == prefix.."clip" then
+            if _G.noclipping == true then
+                _G.noclipping = false
+            end
+        end
+    end
+
+    if args[1]:lower() == prefix.."espmodule" then
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua"), true))()
+    end
+
+    if args[1]:lower() == prefix.."iyyield" then
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/RobloxAlpha/Infinity-Yield-Project/main/Infinity%20Yield%20Script"), true))()
+    end
+
+    if args[1]:lower() == prefix.."allcmds" then
+        game.StarterGui:SetCore("SendNotification", {Title="Notification of server!", Text="satron admin has 15 commands in prisonlife, 7 commands in basic, 22 commands in total!"})
+    end
+
+    if args[1]:lower() == prefix.."infjump" then
+        InfiniteJumpEnabled = true
+        task.wait(0.1)
+        game:GetService("UserInputService").JumpRequest:connect(function()
+	        if InfiniteJumpEnabled then
+		        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	        end
+        end)
+    else
+        if args[1]:lower() == prefix.."uninfjump" then
+            InfiniteJumpEnabled = false
+        end
+    end
+
+    --systems
+
+    local function onnoclip()
+        if _G.noclipping == true then
+            game.Players.LocalPlayer.Character.Head.CanCollide = false 
+            game.Players.LocalPlayer.Character.Torso.CanCollide = false
+        else
+            if _G.noclipping == false then
+                game.Players.LocalPlayer.Character.Head.CanCollide = true 
+                game.Players.LocalPlayer.Character.Torso.CanCollide = true
+            end
+        end
+    end
+
+    game:GetService("RunService").RenderStepped:Connect(onnoclip)
+
+end)
