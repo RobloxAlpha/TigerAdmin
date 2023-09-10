@@ -91,6 +91,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
             else
                 if _G.noclipping == false then
                     hum.WalkSpeed = speed
+                    wait()
+                    _G.noclipping = true
                 end
             end
         end
@@ -101,9 +103,13 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         if args[2] then
             if _G.noclipping == true then
                 hum.JumpPower = jump
+                wait()
+                _G.noclipping = true
             else
                 if _G.noclipping == false then
                     hum.JumpPower = jump
+                    wait()
+                    _G.noclipping = true
                 end
             end
         end
