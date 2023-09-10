@@ -1,0 +1,479 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SatronXCommands = Instance.new("ScreenGui")
+local Prisonlife = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+local TextLabel_17 = Instance.new("TextLabel")
+local Basic = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_18 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
+local TextLabel_20 = Instance.new("TextLabel")
+local TextLabel_21 = Instance.new("TextLabel")
+local TextLabel_22 = Instance.new("TextLabel")
+local TextLabel_23 = Instance.new("TextLabel")
+local TextLabel_24 = Instance.new("TextLabel")
+local TextLabel_25 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Close2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+
+--Properties:
+
+SatronXCommands.Name = "SatronX Commands"
+SatronXCommands.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SatronXCommands.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SatronXCommands.ResetOnSpawn = false
+
+Prisonlife.Name = "Prisonlife"
+Prisonlife.Parent = SatronXCommands
+Prisonlife.AnchorPoint = Vector2.new(0.5, 0.5)
+Prisonlife.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Prisonlife.Position = UDim2.new(0, 985, 0, 492)
+Prisonlife.Size = UDim2.new(0, 468, 0, 384)
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = Prisonlife
+
+TextLabel.Parent = Prisonlife
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 467, 0, 19)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "commands on prisonlife"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Prisonlife
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 0.0748106614, 0)
+TextLabel_2.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = ";lunchroom : teleports you to lunch room"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Prisonlife
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0, 0, 0.124684334, 0)
+TextLabel_3.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = ";armory : teleports you to armory of prison"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = Prisonlife
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0, 0, 0.174557999, 0)
+TextLabel_4.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = ";tower : teleports you to tower"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = Prisonlife
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0, 0, 0.224431828, 0)
+TextLabel_5.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = ";office : teleports you to office(unknown)"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = Prisonlife
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0, 0, 0.274305493, 0)
+TextLabel_6.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = ";gate : teleports you to gate"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = Prisonlife
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0, 0, 0.324179322, 0)
+TextLabel_7.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = ";prison : teleports you to prison"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = Prisonlife
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(-0.00183887966, 0, 0.374053001, 0)
+TextLabel_8.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = ";crimbase : teleports you to criminal base"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+TextLabel_9.Parent = Prisonlife
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0, 0, 0.42392683, 0)
+TextLabel_9.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = ";yard : teleports you to yard"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+TextLabel_10.Parent = Prisonlife
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0, 0, 0.47380051, 0)
+TextLabel_10.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = ";sewers : teleports you to sewers"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+TextLabel_11.Parent = Prisonlife
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0, 0, 0.52367419, 0)
+TextLabel_11.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = ";gas : teleports you to gas station"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+TextLabel_12.Parent = Prisonlife
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0, 0, 0.573548019, 0)
+TextLabel_12.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = ";gatetower : teleports you to gatetower"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+TextLabel_13.Parent = Prisonlife
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0, 0, 0.623421848, 0)
+TextLabel_13.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = ";gatetower2 : teleports you to gatetower2"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+
+TextLabel_14.Parent = Prisonlife
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0, 0, 0.673295498, 0)
+TextLabel_14.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = ";nexus : teleports you to nexus"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+
+TextLabel_15.Parent = Prisonlife
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(0, 0, 0.723169029, 0)
+TextLabel_15.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_15.Font = Enum.Font.SourceSans
+TextLabel_15.Text = ";bridge : teleports you to bridge"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
+
+TextLabel_16.Parent = Prisonlife
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(0, 0, 0.773042679, 0)
+TextLabel_16.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_16.Font = Enum.Font.SourceSans
+TextLabel_16.Text = ";crimarmor : teleports you to armory in criminal base"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
+
+TextLabel_17.Parent = Prisonlife
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(-0.00213675224, 0, 0.822521865, 0)
+TextLabel_17.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_17.Font = Enum.Font.SourceSans
+TextLabel_17.Text = ";cmds : show you cmd gui"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextWrapped = true
+
+Basic.Name = "Basic"
+Basic.Parent = SatronXCommands
+Basic.AnchorPoint = Vector2.new(0.5, 0.5)
+Basic.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Basic.Position = UDim2.new(0, 509, 0, 492)
+Basic.Size = UDim2.new(0, 468, 0, 384)
+
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = Basic
+
+TextLabel_18.Parent = Basic
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_18.BorderSizePixel = 0
+TextLabel_18.Size = UDim2.new(0, 467, 0, 19)
+TextLabel_18.Font = Enum.Font.SourceSans
+TextLabel_18.Text = "basic command"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+TextLabel_19.Parent = Basic
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_19.BorderSizePixel = 0
+TextLabel_19.Position = UDim2.new(0, 0, 0.0748106614, 0)
+TextLabel_19.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_19.Font = Enum.Font.SourceSans
+TextLabel_19.Text = ";ws [amount] : set your walkspeed"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.TextScaled = true
+TextLabel_19.TextSize = 14.000
+TextLabel_19.TextWrapped = true
+
+TextLabel_20.Parent = Basic
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_20.BorderSizePixel = 0
+TextLabel_20.Position = UDim2.new(0, 0, 0.124289833, 0)
+TextLabel_20.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_20.Font = Enum.Font.SourceSans
+TextLabel_20.Text = ";jp [amount] : set your jumppower"
+TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextWrapped = true
+
+TextLabel_21.Parent = Basic
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_21.BorderSizePixel = 0
+TextLabel_21.Position = UDim2.new(0, 0, 0.173768997, 0)
+TextLabel_21.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_21.Font = Enum.Font.SourceSans
+TextLabel_21.Text = ";noclip : turn on noclip"
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.TextScaled = true
+TextLabel_21.TextSize = 14.000
+TextLabel_21.TextWrapped = true
+
+TextLabel_22.Parent = Basic
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_22.BorderSizePixel = 0
+TextLabel_22.Position = UDim2.new(0, 0, 0.223248169, 0)
+TextLabel_22.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_22.Font = Enum.Font.SourceSans
+TextLabel_22.Text = ";clip : turn off noclip"
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.TextScaled = true
+TextLabel_22.TextSize = 14.000
+TextLabel_22.TextWrapped = true
+
+TextLabel_23.Parent = Basic
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.BackgroundTransparency = 1.000
+TextLabel_23.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_23.BorderSizePixel = 0
+TextLabel_23.Position = UDim2.new(0, 0, 0.27272734, 0)
+TextLabel_23.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_23.Font = Enum.Font.SourceSans
+TextLabel_23.Text = ";espmodule : show you esp module"
+TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.TextScaled = true
+TextLabel_23.TextSize = 14.000
+TextLabel_23.TextWrapped = true
+
+TextLabel_24.Parent = Basic
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.BackgroundTransparency = 1.000
+TextLabel_24.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_24.BorderSizePixel = 0
+TextLabel_24.Position = UDim2.new(0, 0, 0.322206497, 0)
+TextLabel_24.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_24.Font = Enum.Font.SourceSans
+TextLabel_24.Text = ";iyyield : show you iy yield"
+TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.TextScaled = true
+TextLabel_24.TextSize = 14.000
+TextLabel_24.TextWrapped = true
+
+TextLabel_25.Parent = Basic
+TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.BackgroundTransparency = 1.000
+TextLabel_25.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_25.BorderSizePixel = 0
+TextLabel_25.Position = UDim2.new(0, 0, 0.372001022, 0)
+TextLabel_25.Size = UDim2.new(0, 458, 0, 19)
+TextLabel_25.Font = Enum.Font.SourceSans
+TextLabel_25.Text = ";allcmds : show you how many commands in this"
+TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.TextScaled = true
+TextLabel_25.TextSize = 14.000
+TextLabel_25.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = SatronXCommands
+Close.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+Close.Position = UDim2.new(0, 1183, 0, 299)
+Close.Size = UDim2.new(0, 34, 0, 29)
+Close.AutoButtonColor = false
+Close.Font = Enum.Font.Unknown
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 17.000
+
+UICorner_3.CornerRadius = UDim.new(0, 3)
+UICorner_3.Parent = Close
+
+Close2.Name = "Close2"
+Close2.Parent = SatronXCommands
+Close2.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+Close2.Position = UDim2.new(0, 706, 0, 299)
+Close2.Size = UDim2.new(0, 34, 0, 29)
+Close2.AutoButtonColor = false
+Close2.Font = Enum.Font.Unknown
+Close2.Text = "X"
+Close2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close2.TextSize = 17.000
+
+UICorner_4.CornerRadius = UDim.new(0, 3)
+UICorner_4.Parent = Close2
+
+-- Scripts:
+
+local function VFYQKYE_fake_script() -- Prisonlife.Draggable 
+	local script = Instance.new('LocalScript', Prisonlife)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(VFYQKYE_fake_script)()
+local function FVDY_fake_script() -- Basic.Draggable 
+	local script = Instance.new('LocalScript', Basic)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(FVDY_fake_script)()
+local function CKZIGXL_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Prisonlife.Visible = false
+	end)
+end
+coroutine.wrap(CKZIGXL_fake_script)()
+local function SGTL_fake_script() -- Close2.LocalScript 
+	local script = Instance.new('LocalScript', Close2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Basic.Visible = false
+	end)
+end
+coroutine.wrap(SGTL_fake_script)()
