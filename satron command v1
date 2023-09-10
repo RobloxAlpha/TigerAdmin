@@ -23,8 +23,10 @@ local TextLabel_14 = Instance.new("TextLabel")
 local TextLabel_15 = Instance.new("TextLabel")
 local TextLabel_16 = Instance.new("TextLabel")
 local TextLabel_17 = Instance.new("TextLabel")
-local Basic = Instance.new("Frame")
+local Close = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
+local Basic = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
 local TextLabel_18 = Instance.new("TextLabel")
 local TextLabel_19 = Instance.new("TextLabel")
 local TextLabel_20 = Instance.new("TextLabel")
@@ -33,8 +35,6 @@ local TextLabel_22 = Instance.new("TextLabel")
 local TextLabel_23 = Instance.new("TextLabel")
 local TextLabel_24 = Instance.new("TextLabel")
 local TextLabel_25 = Instance.new("TextLabel")
-local Close = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
 local Close2 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 
@@ -292,6 +292,20 @@ TextLabel_17.TextScaled = true
 TextLabel_17.TextSize = 14.000
 TextLabel_17.TextWrapped = true
 
+Close.Name = "Close"
+Close.Parent = Prisonlife
+Close.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+Close.Position = UDim2.new(0.927350402, 0, 0, 0)
+Close.Size = UDim2.new(0, 34, 0, 29)
+Close.AutoButtonColor = false
+Close.Font = Enum.Font.Unknown
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 17.000
+
+UICorner_2.CornerRadius = UDim.new(0, 3)
+UICorner_2.Parent = Close
+
 Basic.Name = "Basic"
 Basic.Parent = SatronXCommands
 Basic.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -299,8 +313,8 @@ Basic.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
 Basic.Position = UDim2.new(0, 509, 0, 492)
 Basic.Size = UDim2.new(0, 468, 0, 384)
 
-UICorner_2.CornerRadius = UDim.new(0, 3)
-UICorner_2.Parent = Basic
+UICorner_3.CornerRadius = UDim.new(0, 3)
+UICorner_3.Parent = Basic
 
 TextLabel_18.Parent = Basic
 TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -413,24 +427,10 @@ TextLabel_25.TextScaled = true
 TextLabel_25.TextSize = 14.000
 TextLabel_25.TextWrapped = true
 
-Close.Name = "Close"
-Close.Parent = SatronXCommands
-Close.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-Close.Position = UDim2.new(0, 1183, 0, 299)
-Close.Size = UDim2.new(0, 34, 0, 29)
-Close.AutoButtonColor = false
-Close.Font = Enum.Font.Unknown
-Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(255, 255, 255)
-Close.TextSize = 17.000
-
-UICorner_3.CornerRadius = UDim.new(0, 3)
-UICorner_3.Parent = Close
-
 Close2.Name = "Close2"
-Close2.Parent = SatronXCommands
+Close2.Parent = Basic
 Close2.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-Close2.Position = UDim2.new(0, 706, 0, 299)
+Close2.Position = UDim2.new(0.925213695, 0, -0.00260416674, 0)
 Close2.Size = UDim2.new(0, 34, 0, 29)
 Close2.AutoButtonColor = false
 Close2.Font = Enum.Font.Unknown
@@ -443,7 +443,7 @@ UICorner_4.Parent = Close2
 
 -- Scripts:
 
-local function VFYQKYE_fake_script() -- Prisonlife.Draggable 
+local function SGFN_fake_script() -- Prisonlife.Draggable 
 	local script = Instance.new('LocalScript', Prisonlife)
 
 	frame = script.Parent
@@ -451,8 +451,16 @@ local function VFYQKYE_fake_script() -- Prisonlife.Draggable
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(VFYQKYE_fake_script)()
-local function FVDY_fake_script() -- Basic.Draggable 
+coroutine.wrap(SGFN_fake_script)()
+local function SNLPG_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(SNLPG_fake_script)()
+local function CHWA_fake_script() -- Basic.Draggable 
 	local script = Instance.new('LocalScript', Basic)
 
 	frame = script.Parent
@@ -460,20 +468,12 @@ local function FVDY_fake_script() -- Basic.Draggable
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(FVDY_fake_script)()
-local function CKZIGXL_fake_script() -- Close.LocalScript 
-	local script = Instance.new('LocalScript', Close)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Prisonlife.Visible = false
-	end)
-end
-coroutine.wrap(CKZIGXL_fake_script)()
-local function SGTL_fake_script() -- Close2.LocalScript 
+coroutine.wrap(CHWA_fake_script)()
+local function CHZM_fake_script() -- Close2.LocalScript 
 	local script = Instance.new('LocalScript', Close2)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Basic.Visible = false
+		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(SGTL_fake_script)()
+coroutine.wrap(CHZM_fake_script)()
