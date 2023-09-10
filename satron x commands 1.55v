@@ -8,6 +8,14 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
     _G.noclipping = false
     local InfiniteJumpEnabled = false
 
+    --functions
+
+    local function changeStateHumanoid()
+        if InfiniteJumpEnabled == true then
+            game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+        end
+    end
+
     --commands
 
     if game.PlaceId == 155615604 then -- prison life
@@ -144,13 +152,9 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         task.wait(0.1)
         game:GetService("UserInputService").JumpRequest:connect(function()
 	        if InfiniteJumpEnabled then
-		        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+		        pcall(changeStateHumanoid)
 	        end
         end)
-    else
-        if args[1]:lower() == prefix.."uninfjump" then
-            InfiniteJumpEnabled = false
-        end
     end
 
     --systems
