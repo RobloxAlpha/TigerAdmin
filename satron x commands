@@ -84,14 +84,28 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
     if args[1]:lower() == prefix.."ws" then
         local speed = args[2]
         if args[2] then
-            hum.WalkSpeed = speed
+            if _G.noclipping == true then
+                hum.WalkSpeed = speed
+                wait()
+                _G.noclipping = true
+            else
+                if _G.noclipping == false then
+                    hum.WalkSpeed = speed
+                end
+            end
         end
     end
 
     if args[1]:lower() == prefix.."jp" then
         local jump = args[2]
         if args[2] then
-            hum.JumpPower = jump
+            if _G.noclipping == true then
+                hum.JumpPower = jump
+            else
+                if _G.noclipping == false then
+                    hum.JumpPower = jump
+                end
+            end
         end
     end
 
