@@ -9935,7 +9935,7 @@ addcmd('console',{},function(args, speaker)
 	-- Thanks wally!!
 	notify("Loading",'Hold on a sec')
 	local _, str = pcall(function()
-		return game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/console.lua", true)
+		return game:HttpGet("https://raw.githubusercontent.com/RobloxAlpha/TigerAdmin/main/Console", true)
 	end)
 
 	local s, e = loadstring(str)
