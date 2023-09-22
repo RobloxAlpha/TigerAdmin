@@ -1,0 +1,28 @@
+ToggleONKey = 0x45
+ToggleOFFKey = 0x46
+
+functionaddy = AOBScan("E8 ? ? ? ? 8B 77 14 8B 86 ? ? ? ? 05 ? ? ? ? 89 85")[0]
+instrsize = getInstructionSize(functionaddy)
+b = {}
+n = readBytes(functionaddy,instrsize,true)
+for i = 1, instrsize do
+  b[i] = 0x90
+end
+
+function turnon()
+  writeBytes(functionaddy, b)
+  print("replaced bytes to ours")
+end
+
+function turnoff()
+  writeBytes(functionaddy, n)
+  print("replaced bytes to main")
+end
+
+function init()
+  createHotkey(turnon, ToggleONKey)
+  createHotkey(turnoff, ToggleOFFKey)
+end
+
+print("by w3k")
+init()
